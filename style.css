@@ -11,6 +11,7 @@ body {
     background-color: #0F0F0F;
     position: fixed;
     height: 0px;
+    overflow-y: scroll !important;
 }
 
 
@@ -388,13 +389,10 @@ row-1{
     flex-direction: row;
 }
 
-.video{
+/* .video{
     height: 260px;
-    width: 295px;
-
-    margin-left:35px;
-    margin-right:35px;
-}
+    width: 150px;
+} */
 
 .thumbnail{
     height: 166px;
@@ -410,6 +408,8 @@ row-1{
 .title-info{
   overflow-x: hidden;
   padding-right: 24px;
+  /* padding-bottom: -40px; */
+  margin-bottom: -20px;
 }
 .font-title{
   color: white;
@@ -418,4 +418,28 @@ row-1{
   height: 40px;
   width: 224px;
   font-size: 16px;
+}
+
+.video-body {
+  width: 80%;
+  position: relative;
+  overflow-y: scroll;
+  margin-top: -50px;
+}
+
+.videos {
+  /* position: absolute; */
+  padding-left: 75px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(100px, 1fr));
+  margin-top: 50px;
+  width: 90%;
+  /* grid-gap: 10px; */
+  grid-column-gap: -50px;
+  grid-row-gap: 30px;
+  margin-top: 10px;
+}
+
+.video {
+  scale: 0.9;
 }

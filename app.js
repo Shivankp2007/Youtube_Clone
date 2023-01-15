@@ -8,6 +8,7 @@ var chips_left_btn = document.querySelector("left_btn");
 var sidebar = document.querySelector(".nav-menu");
 var hamburgerIconForSidebar = document.querySelector(".hamburger-icon-for-sidebar");
 var hamburgerToggleFlag = false;
+var videos = document.querySelectorAll(".video");
 
 hamburgerIconForSidebar.addEventListener("click", () => {
     if (hamburgerToggleFlag == false) {
@@ -41,3 +42,15 @@ function topnavSearchInputOnFocusOutEvent() {
     topnavSearchIconBtn.style.position = "relative";
     topnavSearchIconBtn.style.top = "7px";
 };
+
+videos.forEach((video) => {
+    var index = [].indexOf.call(videos, video)
+    var row = [];
+    video.style.marginLeft = "-75px !important";
+    if ((index + 4) % 4 == 0) {
+        console.log(index);
+        videos[index+1].style.marginLeft = "-50px";
+        videos[index+2].style.marginLeft = "-100px";
+        videos[index+3].style.marginLeft = "-150px";
+    } 
+});
