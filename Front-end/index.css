@@ -77,11 +77,11 @@ input{
     font-size: 16px;
 }
 form{
-    width: 572px;
+    width: 680px;
     height: 40px;
     position: relative;
-    flex: 1;
-    flex-basis: 1e-9px;
+    bottom: -9px;
+    right: 111px;
     display: flex;
     flex-direction: row;
     border-radius: 40px 0 0 40px;
@@ -89,7 +89,14 @@ form{
     margin-left: 32px;
     padding: 0px 4px 0px 16px;
 }
-
+.right-nav-buttons{
+  width: 135px;
+  height: max-content;
+  
+}
+a.icons-a{
+  height: 2px;
+}
 nav.topnav{
     height: 56px;
     padding: 0 16px;
@@ -98,7 +105,6 @@ nav.topnav{
     align-items: center;
     justify-content: space-between;
 }
-
 .left-topnav{
     display: flex;
     flex-direction: row;
@@ -107,6 +113,34 @@ nav.topnav{
     height: 56px;
 }
 
+.a.icons-a{
+  fill: white;
+  padding-left: 16px;
+  align-content: center;
+  display: flex;
+  background-color:#383838;
+  border-radius: 30px;
+  cursor: pointer;
+  position: relative;
+  right: -21px;
+}
+.mic-a{
+  fill: white;
+  padding-left: 16px;
+  align-content: center;
+  display: flex;
+  background-color:#383838;
+  border-radius: 30px;
+  cursor: pointer;
+  position: relative;
+  right: -21px;
+}
+.mic{
+  display: flex;
+  align-self: center;
+  position: relative;
+  right: 8px;
+}
 yt-button{
     margin: 0px;
     color: #fff;
@@ -119,7 +153,7 @@ yt-button{
 }
 
 yt-button:hover{
-    background-color: #f1f1f137;
+    background-color: #272727;
     border-radius: 100px;
     cursor: pointer;
 }
@@ -138,16 +172,15 @@ a yt-logo{
     align-self: center;
 }
 
+.mic:hover{
+  background-color: rgb(160, 160, 160);
+}
+
 yt-logo-icon{
     height: 20px;
     width: 90px;
     padding: 18px 14px 18px 16px;
     flex: none;
-}
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
-html {
-  font-size: 16px;
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 .menu {
     margin: 0.75rem 0;
@@ -156,24 +189,27 @@ html {
 }
 .menu__link {
   display: flex;
-  padding-left: 1.5rem;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 100%;
-  height: 2.5rem;
+  width: 204px;
+  height: 40px;
   color: white;
   text-decoration: none;
   font-size: 0.875rem;
+  padding: 0px 12px;
+  margin: 0px;
 }
 
 .menu__link--active {
   font-weight: bold;
-  background-color: #383838;
+  background-color: #272727;
 }
 
 .menu__link:hover {
-  background-color: #383838;
+  background-color:#272727;
+  border-radius: 15px;
+
 }
 
 .menu__icon {
@@ -215,9 +251,6 @@ html {
   margin-bottom: 1.5rem;
 }
 
-.nav-footer li {
-  display: inline;
-}
 
 .nav-footer a {
   color: #9D9D9D;
@@ -230,20 +263,6 @@ html {
   color: #6F6F6F;
   font-weight: 500;
   padding: 0 1.5rem 1rem 1.5rem;
-}
-body {
-  margin: 0;
-  padding: 0;
-  color: white;
-}
-
-a {
-  color: white;
-  text-decoration: none;
-}
-
-.disable {
-  display: none;
 }
 
 .top-bar {
@@ -262,110 +281,6 @@ a {
   width: 100%;
   height: 3.5rem;
   background-color: #202020;
-}
-
-.start {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.start__menu-icon {
-  margin-right: 1.5rem;
-  cursor: pointer;
-}
-
-.start__yt-icon {
-  width: 5rem;
-  height: 1.125rem;
-}
-
-.search {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-preferred-size: 42.25rem;
-      flex-basis: 42.25rem;
-  margin-left: 2.5rem;
-}
-
-.search a {
-  width: 1.5rem;
-  height: 1.5rem;
-  margin: 0 1rem;
-}
-
-.search__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-preferred-size: 40rem;
-      flex-basis: 40rem;
-  height: 2rem;
-}
-
-.search__input {
-  width: calc(100% - 4rem);
-  border: 1px solid #313131;
-  border-radius: 1px;
-  background-color: #121212;
-  padding: 0.625rem;
-  font-size: 1rem;
-}
-
-.search__input:focus {
-  border-color: #3ea6ff;
-  outline: none;
-}
-
-.search__button {
-  width: 4rem;
-  border: none;
-  border-radius: 1px;
-  background-color: #313131;
-  cursor: pointer;
-  outline: none;
-}
-
-.search__button img {
-  width: 20px;
-  height: 20px;
-}
-
-.buttons {
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.buttons a {
-  width: 2.5rem;
-  height: 2.5rem;
-  display: -ms-grid;
-  display: grid;
-  place-content: center;
-  margin-right: 0.5rem;
-}
-
-.buttons img {
-  width: 100%;
-  border-radius: 50%;
 }
 
 .nav-menu {
@@ -388,8 +303,28 @@ a {
     background-color:hsl(0deg 0% 100% / 8%);
     cursor: pointer;
     height: 42px;
+    width: 1800px;
     margin: 0;
     fill: white;
     border-top-right-radius: 35px;
     border-bottom-right-radius:35px;
+}
+
+::-webkit-scrollbar{
+  width:8px;
+}
+
+::-webkit-scrollbar-track{
+background: #0F0F0F;
+}
+
+::-webkit-scrollbar-thumb{
+  background:rgb(158, 158, 158);
+  border-radius: 10px;
+}
+
+.right-icons{
+  width: 24px;
+  height: 24px;
+  fill: white;
 }
