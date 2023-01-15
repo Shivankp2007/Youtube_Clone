@@ -11,11 +11,12 @@
     <link rel="stylesheet" href="style.css">
     <!-- <link rel="stylesheet" href="style-navbar.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" href="https://www.youtube.com/s/desktop/b5a8f283/img/favicon_144x144.png" sizes="144x144">
+    <link rel="stylesheet" href="chips.css">
     <title>Youtube</title>
 </head>
 <body>
@@ -47,9 +48,15 @@
         <div class="right-nav-buttons">
           <div class="buttons">
             <a class="icons-a" href="#" title="Create">
-              <svg class="right-icons" width="40px" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"><g><path d="M14,13h-3v3H9v-3H6v-2h3V8h2v3h3V13z M17,6H3v12h14v-6.39l4,1.83V8.56l-4,1.83V6 M18,5v3.83L22,7v8l-4-1.83V19H2V5H18L18,5 z"  ></path></g></svg>            </a>
+              <yt-button>
+               <svg class="right-icons" width="40px" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"><g><path d="M14,13h-3v3H9v-3H6v-2h3V8h2v3h3V13z M17,6H3v12h14v-6.39l4,1.83V8.56l-4,1.83V6 M18,5v3.83L22,7v8l-4-1.83V19H2V5H18L18,5 z"  ></path></g></svg>
+              </yt-button>            
+            </a>
             <a class="icons-a" href="#" title="Notifications">
-              <svg class="right-icons" width="40px" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"><g><path d="M10,20h4c0,1.1-0.9,2-2,2S10,21.1,10,20z M20,17.35V19H4v-1.65l2-1.88v-5.15c0-2.92,1.56-5.22,4-5.98V3.96 c0-1.42,1.49-2.5,2.99-1.76C13.64,2.52,14,3.23,14,3.96l0,0.39c2.44,0.75,4,3.06,4,5.98v5.15L20,17.35z M19,17.77l-2-1.88v-5.47 c0-2.47-1.19-4.36-3.13-5.1c-1.26-0.53-2.64-0.5-3.84,0.03C8.15,6.11,7,7.99,7,10.42v5.47l-2,1.88V18h14V17.77z"  ></path></g></svg>            </a>
+              <yt-button>
+                <svg class="right-icons" width="40px" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"><g><path d="M10,20h4c0,1.1-0.9,2-2,2S10,21.1,10,20z M20,17.35V19H4v-1.65l2-1.88v-5.15c0-2.92,1.56-5.22,4-5.98V3.96 c0-1.42,1.49-2.5,2.99-1.76C13.64,2.52,14,3.23,14,3.96l0,0.39c2.44,0.75,4,3.06,4,5.98v5.15L20,17.35z M19,17.77l-2-1.88v-5.47 c0-2.47-1.19-4.36-3.13-5.1c-1.26-0.53-2.64-0.5-3.84,0.03C8.15,6.11,7,7.99,7,10.42v5.47l-2,1.88V18h14V17.77z"  ></path></g></svg>     
+              </yt-button>    
+            </a>
             <a href="#">
               <img id="img" draggable="false" class="" alt="Avatar image" height="32" width="32" src="https://yt3.ggpht.com/ytc/AMLnZu-8UVx_DoI484kzImhDOUSXmnDby1zhie7tfMmrtUiO0FYLMol5F44STThGAM_g=s88-c-k-c0x00ffffff-no-rj-mo">
             </a>
@@ -59,7 +66,7 @@
         </div>
     </nav>
     <div class="default_sidebar">
-        <ul>
+        <ul class="side-bar">
             <a href="#" class="menu__link default-sidebar-btn menu__link--active" title="Home">
                 <div class="menu__icon" style="position: relative; left: 12px;">
                     <svg class="resize" style="width: 100%;" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"     ><g  ><path d="M4,10V21h6V15h4v6h6V10L12,3Z"  ></path></g></svg>
@@ -164,7 +171,7 @@
     </a><a>
     <a href="" class="menu__link" title="overment">
       <div class="menu__icon sub-image">
-          <img src="./assets/images/overment.jpg" alt="overment">
+          <img src="" alt="overment">
       </div>
       <li classname="menu__item">overment</li>
     </a>
@@ -276,6 +283,39 @@
           <p>© 2023 Youtube</p>
         </footer>
     </nav>
+    <!--% extends 'main/base.html' %}
+{% block content %}-->
+    <div class="fade_container">
+    <div class="fade1"></div>
+    <ul class="chips">
+        <li class="chip">All</li>
+        <li class="chip">Gaming</li>
+        <li class="chip">Live</li>
+        <li class="chip">Mixes</li>
+        <li class="chip">Music</li>
+        <li class="chip">Gyms</li>
+        <li class="chip">History</li>
+        <li class="chip">Thoughts</li>
+        <li class="chip">Humans</li>
+        <li class="chip">Comedy</li>
+        <li class="chip">Thrillers</li>
+        <li class="chip">Physics</li>   
+        <li class="chip">Film Criticisms</li>
+        <li class="chip">Podcasts</li>
+        <li class="chip">Fashion</li>
+        <li class="chip">Combat Sports</li>
+        <li class="chip">Drawing</li>
+        <li class="chip">Tamil Cinema</li>
+        <li class="chip">Recently uploaded</li>
+        <li class="chip">New to you</li>
+    </ul>
+    <div class="fade2"></div>
+    </div>
+    
+    <div class="left_btn">
+        L
+    </div>
+    <!--{% endblock content %}-->
     <div class="ççy">
       <div class="videos">
         <div class="video">
@@ -297,6 +337,118 @@
         <div class="video">
           <div class="thumbnail">
             <a href="">
+              <img class="thumbnail" src="Thumbnails\2.webp" alt="">
+            </a>
+          </div>
+          <div class="details">
+            <a href="" class="avatar-link">
+              <img class="avatar-link" src="Avatars\2.jpg" alt="">
+            </a>
+            <div class="title-info">
+              <h3 class="font-title">Ram Charan Teja Talks The "Overwhelming" Audience Reaction To 'RRR' | Golden Globes 2023</h3>
+              <p style="color: #fff; margin-top: 30px; white-space: nowrap;">Aevy TV <span class="disc" style="width: 5px; height: 5px; border-radius: 50%; background-color: #fff; display: inline-block; position: relative; bottom: 2.5px;"></span> <span>1 month ago</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="video">
+          <div class="thumbnail">
+            <a href="">
+              <img class="thumbnail" src="Thumbnails\3.webp" alt="">
+            </a>
+          </div>
+          <div class="details">
+            <a href="" class="avatar-link">
+              <img class="avatar-link" src="Avatars\3.jpg" alt="">
+            </a>
+            <div class="title-info">
+              <h3 class="font-title">The Sad Reality of Avatar 2 | Way of Water | Dhruv Rathee</h3>
+              <p style="color: #fff; margin-top: 30px; white-space: nowrap;">Dhruv Rathee <span class="disc" style="width: 5px; height: 5px; border-radius: 50%; background-color: #fff; display: inline-block; position: relative; bottom: 2.5px;"></span> <span>1 month ago</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="video">
+          <div class="thumbnail">
+            <a href="">
+              <img class="thumbnail" src="Thumbnails\1.webp" alt="">
+            </a>
+          </div>
+          <div class="details">
+            <a href="" class="avatar-link">
+              <img class="avatar-link" src="Avatars\1.jpg" alt="">
+            </a>
+            <div class="title-info">
+              <h3 class="font-title">Will Artificial Intelligence Put You Out of a Job?ft.@TechBurner</h3>
+              <p style="color: #fff; margin-top: 30px; white-space: nowrap;">Aevy TV <span class="disc" style="width: 5px; height: 5px; border-radius: 50%; background-color: #fff; display: inline-block; position: relative; bottom: 2.5px;"></span> <span>1 month ago</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="video">
+          <div class="thumbnail">
+            <a href="">
+              <img class="thumbnail" src="Thumbnails\1.webp" alt="">
+            </a>
+          </div>
+          <div class="details">
+            <a href="" class="avatar-link">
+              <img class="avatar-link" src="Avatars\1.jpg" alt="">
+            </a>
+            <div class="title-info">
+              <h3 class="font-title">Will Artificial Intelligence Put You Out of a Job?ft.@TechBurner</h3>
+              <p style="color: #fff; margin-top: 30px; white-space: nowrap;">Aevy TV <span class="disc" style="width: 5px; height: 5px; border-radius: 50%; background-color: #fff; display: inline-block; position: relative; bottom: 2.5px;"></span> <span>1 month ago</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="video">
+          <div class="thumbnail">
+            <a href="">
+              <img class="thumbnail" src="Thumbnails\1.webp" alt="">
+            </a>
+          </div>
+          <div class="details">
+            <a href="" class="avatar-link">
+              <img class="avatar-link" src="Avatars\1.jpg" alt="">
+            </a>
+            <div class="title-info">
+              <h3 class="font-title">Will Artificial Intelligence Put You Out of a Job?ft.@TechBurner</h3>
+              <p style="color: #fff; margin-top: 30px; white-space: nowrap;">Aevy TV <span class="disc" style="width: 5px; height: 5px; border-radius: 50%; background-color: #fff; display: inline-block; position: relative; bottom: 2.5px;"></span> <span>1 month ago</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="video">
+          <div class="thumbnail">
+            <a href="">
+              <img class="thumbnail" src="Thumbnails\1.webp" alt="">
+            </a>
+          </div>
+          <div class="details">
+            <a href="" class="avatar-link">
+              <img class="avatar-link" src="Avatars\1.jpg" alt="">
+            </a>
+            <div class="title-info">
+              <h3 class="font-title">Will Artificial Intelligence Put You Out of a Job?ft.@TechBurner</h3>
+              <p style="color: #fff; margin-top: 30px; white-space: nowrap;">Aevy TV <span class="disc" style="width: 5px; height: 5px; border-radius: 50%; background-color: #fff; display: inline-block; position: relative; bottom: 2.5px;"></span> <span>1 month ago</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="video">
+          <div class="thumbnail">
+            <a href="">
+              <img class="thumbnail" src="Thumbnails\1.webp" alt="">
+            </a>
+          </div>
+          <div class="details">
+            <a href="" class="avatar-link">
+              <img class="avatar-link" src="Avatars\1.jpg" alt="">
+            </a>
+            <div class="title-info">
+              <h3 class="font-title">Will Artificial Intelligence Put You Out of a Job?ft.@TechBurner</h3>
+              <p style="color: #fff; margin-top: 30px; white-space: nowrap;">Aevy TV <span class="disc" style="width: 5px; height: 5px; border-radius: 50%; background-color: #fff; display: inline-block; position: relative; bottom: 2.5px;"></span> <span>1 month ago</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="video">
+          <div class="thumbnail">
+            <a href="">
               <img class="thumbnail" src="Thumbnails\1.webp" alt="">
             </a>
           </div>
@@ -406,6 +558,377 @@
             </div>
           </div>
         </div>
+        <div class="video">
+          <div class="thumbnail">
+            <a href="">
+              <img class="thumbnail" src="Thumbnails\1.webp" alt="">
+            </a>
+          </div>
+          <div class="details">
+            <a href="" class="avatar-link">
+              <img class="avatar-link" src="Avatars\1.jpg" alt="">
+            </a>
+            <div class="title-info">
+              <h3 class="font-title">Will Artificial Intelligence Put You Out of a Job?ft.@TechBurner</h3>
+              <p style="color: #fff; margin-top: 30px; white-space: nowrap;">Aevy TV <span class="disc" style="width: 5px; height: 5px; border-radius: 50%; background-color: #fff; display: inline-block; position: relative; bottom: 2.5px;"></span> <span>1 month ago</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="video">
+          <div class="thumbnail">
+            <a href="">
+              <img class="thumbnail" src="Thumbnails\1.webp" alt="">
+            </a>
+          </div>
+          <div class="details">
+            <a href="" class="avatar-link">
+              <img class="avatar-link" src="Avatars\1.jpg" alt="">
+            </a>
+            <div class="title-info">
+              <h3 class="font-title">Will Artificial Intelligence Put You Out of a Job?ft.@TechBurner</h3>
+              <p style="color: #fff; margin-top: 30px; white-space: nowrap;">Aevy TV <span class="disc" style="width: 5px; height: 5px; border-radius: 50%; background-color: #fff; display: inline-block; position: relative; bottom: 2.5px;"></span> <span>1 month ago</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="video">
+          <div class="thumbnail">
+            <a href="">
+              <img class="thumbnail" src="Thumbnails\1.webp" alt="">
+            </a>
+          </div>
+          <div class="details">
+            <a href="" class="avatar-link">
+              <img class="avatar-link" src="Avatars\1.jpg" alt="">
+            </a>
+            <div class="title-info">
+              <h3 class="font-title">Will Artificial Intelligence Put You Out of a Job?ft.@TechBurner</h3>
+              <p style="color: #fff; margin-top: 30px; white-space: nowrap;">Aevy TV <span class="disc" style="width: 5px; height: 5px; border-radius: 50%; background-color: #fff; display: inline-block; position: relative; bottom: 2.5px;"></span> <span>1 month ago</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="video">
+          <div class="thumbnail">
+            <a href="">
+              <img class="thumbnail" src="Thumbnails\1.webp" alt="">
+            </a>
+          </div>
+          <div class="details">
+            <a href="" class="avatar-link">
+              <img class="avatar-link" src="Avatars\1.jpg" alt="">
+            </a>
+            <div class="title-info">
+              <h3 class="font-title">Will Artificial Intelligence Put You Out of a Job?ft.@TechBurner</h3>
+              <p style="color: #fff; margin-top: 30px; white-space: nowrap;">Aevy TV <span class="disc" style="width: 5px; height: 5px; border-radius: 50%; background-color: #fff; display: inline-block; position: relative; bottom: 2.5px;"></span> <span>1 month ago</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="video">
+          <div class="thumbnail">
+            <a href="">
+              <img class="thumbnail" src="Thumbnails\1.webp" alt="">
+            </a>
+          </div>
+          <div class="details">
+            <a href="" class="avatar-link">
+              <img class="avatar-link" src="Avatars\1.jpg" alt="">
+            </a>
+            <div class="title-info">
+              <h3 class="font-title">Will Artificial Intelligence Put You Out of a Job?ft.@TechBurner</h3>
+              <p style="color: #fff; margin-top: 30px; white-space: nowrap;">Aevy TV <span class="disc" style="width: 5px; height: 5px; border-radius: 50%; background-color: #fff; display: inline-block; position: relative; bottom: 2.5px;"></span> <span>1 month ago</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="video">
+          <div class="thumbnail">
+            <a href="">
+              <img class="thumbnail" src="Thumbnails\1.webp" alt="">
+            </a>
+          </div>
+          <div class="details">
+            <a href="" class="avatar-link">
+              <img class="avatar-link" src="Avatars\1.jpg" alt="">
+            </a>
+            <div class="title-info">
+              <h3 class="font-title">Will Artificial Intelligence Put You Out of a Job?ft.@TechBurner</h3>
+              <p style="color: #fff; margin-top: 30px; white-space: nowrap;">Aevy TV <span class="disc" style="width: 5px; height: 5px; border-radius: 50%; background-color: #fff; display: inline-block; position: relative; bottom: 2.5px;"></span> <span>1 month ago</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="video">
+          <div class="thumbnail">
+            <a href="">
+              <img class="thumbnail" src="Thumbnails\1.webp" alt="">
+            </a>
+          </div>
+          <div class="details">
+            <a href="" class="avatar-link">
+              <img class="avatar-link" src="Avatars\1.jpg" alt="">
+            </a>
+            <div class="title-info">
+              <h3 class="font-title">Will Artificial Intelligence Put You Out of a Job?ft.@TechBurner</h3>
+              <p style="color: #fff; margin-top: 30px; white-space: nowrap;">Aevy TV <span class="disc" style="width: 5px; height: 5px; border-radius: 50%; background-color: #fff; display: inline-block; position: relative; bottom: 2.5px;"></span> <span>1 month ago</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="video">
+          <div class="thumbnail">
+            <a href="">
+              <img class="thumbnail" src="Thumbnails\1.webp" alt="">
+            </a>
+          </div>
+          <div class="details">
+            <a href="" class="avatar-link">
+              <img class="avatar-link" src="Avatars\1.jpg" alt="">
+            </a>
+            <div class="title-info">
+              <h3 class="font-title">Will Artificial Intelligence Put You Out of a Job?ft.@TechBurner</h3>
+              <p style="color: #fff; margin-top: 30px; white-space: nowrap;">Aevy TV <span class="disc" style="width: 5px; height: 5px; border-radius: 50%; background-color: #fff; display: inline-block; position: relative; bottom: 2.5px;"></span> <span>1 month ago</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="video">
+          <div class="thumbnail">
+            <a href="">
+              <img class="thumbnail" src="Thumbnails\1.webp" alt="">
+            </a>
+          </div>
+          <div class="details">
+            <a href="" class="avatar-link">
+              <img class="avatar-link" src="Avatars\1.jpg" alt="">
+            </a>
+            <div class="title-info">
+              <h3 class="font-title">Will Artificial Intelligence Put You Out of a Job?ft.@TechBurner</h3>
+              <p style="color: #fff; margin-top: 30px; white-space: nowrap;">Aevy TV <span class="disc" style="width: 5px; height: 5px; border-radius: 50%; background-color: #fff; display: inline-block; position: relative; bottom: 2.5px;"></span> <span>1 month ago</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="video">
+          <div class="thumbnail">
+            <a href="">
+              <img class="thumbnail" src="Thumbnails\1.webp" alt="">
+            </a>
+          </div>
+          <div class="details">
+            <a href="" class="avatar-link">
+              <img class="avatar-link" src="Avatars\1.jpg" alt="">
+            </a>
+            <div class="title-info">
+              <h3 class="font-title">Will Artificial Intelligence Put You Out of a Job?ft.@TechBurner</h3>
+              <p style="color: #fff; margin-top: 30px; white-space: nowrap;">Aevy TV <span class="disc" style="width: 5px; height: 5px; border-radius: 50%; background-color: #fff; display: inline-block; position: relative; bottom: 2.5px;"></span> <span>1 month ago</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="video">
+          <div class="thumbnail">
+            <a href="">
+              <img class="thumbnail" src="Thumbnails\1.webp" alt="">
+            </a>
+          </div>
+          <div class="details">
+            <a href="" class="avatar-link">
+              <img class="avatar-link" src="Avatars\1.jpg" alt="">
+            </a>
+            <div class="title-info">
+              <h3 class="font-title">Will Artificial Intelligence Put You Out of a Job?ft.@TechBurner</h3>
+              <p style="color: #fff; margin-top: 30px; white-space: nowrap;">Aevy TV <span class="disc" style="width: 5px; height: 5px; border-radius: 50%; background-color: #fff; display: inline-block; position: relative; bottom: 2.5px;"></span> <span>1 month ago</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="video">
+          <div class="thumbnail">
+            <a href="">
+              <img class="thumbnail" src="Thumbnails\1.webp" alt="">
+            </a>
+          </div>
+          <div class="details">
+            <a href="" class="avatar-link">
+              <img class="avatar-link" src="Avatars\1.jpg" alt="">
+            </a>
+            <div class="title-info">
+              <h3 class="font-title">Will Artificial Intelligence Put You Out of a Job?ft.@TechBurner</h3>
+              <p style="color: #fff; margin-top: 30px; white-space: nowrap;">Aevy TV <span class="disc" style="width: 5px; height: 5px; border-radius: 50%; background-color: #fff; display: inline-block; position: relative; bottom: 2.5px;"></span> <span>1 month ago</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="video">
+          <div class="thumbnail">
+            <a href="">
+              <img class="thumbnail" src="Thumbnails\1.webp" alt="">
+            </a>
+          </div>
+          <div class="details">
+            <a href="" class="avatar-link">
+              <img class="avatar-link" src="Avatars\1.jpg" alt="">
+            </a>
+            <div class="title-info">
+              <h3 class="font-title">Will Artificial Intelligence Put You Out of a Job?ft.@TechBurner</h3>
+              <p style="color: #fff; margin-top: 30px; white-space: nowrap;">Aevy TV <span class="disc" style="width: 5px; height: 5px; border-radius: 50%; background-color: #fff; display: inline-block; position: relative; bottom: 2.5px;"></span> <span>1 month ago</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="video">
+          <div class="thumbnail">
+            <a href="">
+              <img class="thumbnail" src="Thumbnails\1.webp" alt="">
+            </a>
+          </div>
+          <div class="details">
+            <a href="" class="avatar-link">
+              <img class="avatar-link" src="Avatars\1.jpg" alt="">
+            </a>
+            <div class="title-info">
+              <h3 class="font-title">Will Artificial Intelligence Put You Out of a Job?ft.@TechBurner</h3>
+              <p style="color: #fff; margin-top: 30px; white-space: nowrap;">Aevy TV <span class="disc" style="width: 5px; height: 5px; border-radius: 50%; background-color: #fff; display: inline-block; position: relative; bottom: 2.5px;"></span> <span>1 month ago</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="video">
+          <div class="thumbnail">
+            <a href="">
+              <img class="thumbnail" src="Thumbnails\1.webp" alt="">
+            </a>
+          </div>
+          <div class="details">
+            <a href="" class="avatar-link">
+              <img class="avatar-link" src="Avatars\1.jpg" alt="">
+            </a>
+            <div class="title-info">
+              <h3 class="font-title">Will Artificial Intelligence Put You Out of a Job?ft.@TechBurner</h3>
+              <p style="color: #fff; margin-top: 30px; white-space: nowrap;">Aevy TV <span class="disc" style="width: 5px; height: 5px; border-radius: 50%; background-color: #fff; display: inline-block; position: relative; bottom: 2.5px;"></span> <span>1 month ago</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="video">
+          <div class="thumbnail">
+            <a href="">
+              <img class="thumbnail" src="Thumbnails\1.webp" alt="">
+            </a>
+          </div>
+          <div class="details">
+            <a href="" class="avatar-link">
+              <img class="avatar-link" src="Avatars\1.jpg" alt="">
+            </a>
+            <div class="title-info">
+              <h3 class="font-title">Will Artificial Intelligence Put You Out of a Job?ft.@TechBurner</h3>
+              <p style="color: #fff; margin-top: 30px; white-space: nowrap;">Aevy TV <span class="disc" style="width: 5px; height: 5px; border-radius: 50%; background-color: #fff; display: inline-block; position: relative; bottom: 2.5px;"></span> <span>1 month ago</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="video">
+          <div class="thumbnail">
+            <a href="">
+              <img class="thumbnail" src="Thumbnails\1.webp" alt="">
+            </a>
+          </div>
+          <div class="details">
+            <a href="" class="avatar-link">
+              <img class="avatar-link" src="Avatars\1.jpg" alt="">
+            </a>
+            <div class="title-info">
+              <h3 class="font-title">Will Artificial Intelligence Put You Out of a Job?ft.@TechBurner</h3>
+              <p style="color: #fff; margin-top: 30px; white-space: nowrap;">Aevy TV <span class="disc" style="width: 5px; height: 5px; border-radius: 50%; background-color: #fff; display: inline-block; position: relative; bottom: 2.5px;"></span> <span>1 month ago</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="video">
+          <div class="thumbnail">
+            <a href="">
+              <img class="thumbnail" src="Thumbnails\1.webp" alt="">
+            </a>
+          </div>
+          <div class="details">
+            <a href="" class="avatar-link">
+              <img class="avatar-link" src="Avatars\1.jpg" alt="">
+            </a>
+            <div class="title-info">
+              <h3 class="font-title">Will Artificial Intelligence Put You Out of a Job?ft.@TechBurner</h3>
+              <p style="color: #fff; margin-top: 30px; white-space: nowrap;">Aevy TV <span class="disc" style="width: 5px; height: 5px; border-radius: 50%; background-color: #fff; display: inline-block; position: relative; bottom: 2.5px;"></span> <span>1 month ago</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="video">
+          <div class="thumbnail">
+            <a href="">
+              <img class="thumbnail" src="Thumbnails\1.webp" alt="">
+            </a>
+          </div>
+          <div class="details">
+            <a href="" class="avatar-link">
+              <img class="avatar-link" src="Avatars\1.jpg" alt="">
+            </a>
+            <div class="title-info">
+              <h3 class="font-title">Will Artificial Intelligence Put You Out of a Job?ft.@TechBurner</h3>
+              <p style="color: #fff; margin-top: 30px; white-space: nowrap;">Aevy TV <span class="disc" style="width: 5px; height: 5px; border-radius: 50%; background-color: #fff; display: inline-block; position: relative; bottom: 2.5px;"></span> <span>1 month ago</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="video">
+          <div class="thumbnail">
+            <a href="">
+              <img class="thumbnail" src="Thumbnails\1.webp" alt="">
+            </a>
+          </div>
+          <div class="details">
+            <a href="" class="avatar-link">
+              <img class="avatar-link" src="Avatars\1.jpg" alt="">
+            </a>
+            <div class="title-info">
+              <h3 class="font-title">Will Artificial Intelligence Put You Out of a Job?ft.@TechBurner</h3>
+              <p style="color: #fff; margin-top: 30px; white-space: nowrap;">Aevy TV <span class="disc" style="width: 5px; height: 5px; border-radius: 50%; background-color: #fff; display: inline-block; position: relative; bottom: 2.5px;"></span> <span>1 month ago</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="video">
+          <div class="thumbnail">
+            <a href="">
+              <img class="thumbnail" src="Thumbnails\1.webp" alt="">
+            </a>
+          </div>
+          <div class="details">
+            <a href="" class="avatar-link">
+              <img class="avatar-link" src="Avatars\1.jpg" alt="">
+            </a>
+            <div class="title-info">
+              <h3 class="font-title">Will Artificial Intelligence Put You Out of a Job?ft.@TechBurner</h3>
+              <p style="color: #fff; margin-top: 30px; white-space: nowrap;">Aevy TV <span class="disc" style="width: 5px; height: 5px; border-radius: 50%; background-color: #fff; display: inline-block; position: relative; bottom: 2.5px;"></span> <span>1 month ago</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="video">
+          <div class="thumbnail">
+            <a href="">
+              <img class="thumbnail" src="Thumbnails\1.webp" alt="">
+            </a>
+          </div>
+          <div class="details">
+            <a href="" class="avatar-link">
+              <img class="avatar-link" src="Avatars\1.jpg" alt="">
+            </a>
+            <div class="title-info">
+              <h3 class="font-title">Will Artificial Intelligence Put You Out of a Job?ft.@TechBurner</h3>
+              <p style="color: #fff; margin-top: 30px; white-space: nowrap;">Aevy TV <span class="disc" style="width: 5px; height: 5px; border-radius: 50%; background-color: #fff; display: inline-block; position: relative; bottom: 2.5px;"></span> <span>1 month ago</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="video">
+          <div class="thumbnail">
+            <a href="">
+              <img class="thumbnail" src="Thumbnails\1.webp" alt="">
+            </a>
+          </div>
+          <div class="details">
+            <a href="" class="avatar-link">
+              <img class="avatar-link" src="Avatars\1.jpg" alt="">
+            </a>
+            <div class="title-info">
+              <h3 class="font-title">Will Artificial Intelligence Put You Out of a Job?ft.@TechBurner</h3>
+              <p style="color: #fff; margin-top: 30px; white-space: nowrap;">Aevy TV <span class="disc" style="width: 5px; height: 5px; border-radius: 50%; background-color: #fff; display: inline-block; position: relative; bottom: 2.5px;"></span> <span>1 month ago</span></p>
+            </div>
+          </div>
+        </div>
+
+        
+
       </div>
     </div>
     <script src="app.js"></script>

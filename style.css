@@ -4,22 +4,16 @@
     padding: 0;
     font-family: Roboto, Arial, sans-serif;
 }
-
-
 body {
-    overflow-x: hidden;
-    background-color: #0F0F0F;
-    position: fixed;
-    height: 0px;
-    overflow-y: scroll !important;
+ overflow-x: hidden;
+ background-color: #0F0F0F;
+ height: 0px;
+ overflow-y: scroll !important;
+ 
 }
-
-
 div.left, div.center, div.right {
-    text-align: center;
+  text-align: center;
 }
-
-
 .topnav-search-focus-indicator {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -83,7 +77,6 @@ form{
     width: 680px;
     height: 40px;
     position: relative;
-    bottom: -9px;
     right: -120px;
     display: flex;
     flex-direction: row;
@@ -92,23 +85,25 @@ form{
     margin-left: 32px;
     padding: 0px 4px 0px 16px;
 }
-.right-nav-buttons{
-  width: 135px;
-  height: max-content;
-  margin-left:450px;
-  
-}
-a.icons-a{
-  height: 2px;
+.buttons{
+  margin-left: 400px;
 }
 nav.topnav{
+    top: 0px;
     height: 56px;
     padding: 0 16px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    z-index:1;
+    background-color: #0F0F0F;
 }
+.ççy{
+  margin-top: 150px;
+}
+.sid
 .left-topnav{
     display: flex;
     flex-direction: row;
@@ -116,17 +111,9 @@ nav.topnav{
     width: 169px;
     height: 56px;
 }
-
-.a.icons-a{
-  fill: white;
-  padding-left: 16px;
-  align-content: center;
-  display: flex;
-  background-color:#383838;
-  border-radius: 30px;
-  cursor: pointer;
-  position: relative;
-  right: -21px;
+.icons-a{
+  height: 40px;
+  width: 40px;
 }
 .mic-a{
   fill: white;
@@ -154,20 +141,20 @@ yt-button{
     padding: 8px;
     margin-right: 8px;
     box-sizing: border-box;
-    background-color: #0F0F0F;
-}
-yt-button:hover{
-    background-color: #b7b7b725;
-
-
 }
 .mic-a:hover{
     background-color:#b7b7b725
 }
 yt-button:hover{
-    /* background-color: #272727; */
-    border-radius: 100px;
+    background-color: #272727;
+    border-radius: 50px;
     cursor: pointer;
+}
+
+#img{
+  border-radius: 15px;
+  position: relative;
+  top: 5px;
 }
 .hambutton{
     fill: white;
@@ -272,6 +259,12 @@ yt-logo-icon{
   padding: 0 1.5rem 1rem 1.5rem;
 }
 
+.side-bar{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  margin-top: -100px;
+}
 .top-bar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -291,7 +284,6 @@ yt-logo-icon{
 }
 
 .nav-menu {
-  position: relative;
   width: 15rem;
   background-color:#0F0F0F;
   overflow-y: scroll;
@@ -301,6 +293,11 @@ yt-logo-icon{
   z-index: 5;
   left: -15rem;
   transition: all 0.2s ease-in-out;
+  overflow: hidden;
+}
+
+.nav-menu:hover{
+overflow-y:scroll ;
 }
 
 .default_sidebar {
@@ -362,38 +359,12 @@ background: #0F0F0F;
   background:rgb(158, 158, 158);
   border-radius: 10px;
 }
-
 .right-icons{
-  width: 24px;
-  height: 24px;
   fill: white;
+  height: 24px;
+  width: 24px;
+  align-items: center;
 }
-video-body{
-    width: 100%;
-    padding-top: 24px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    padding-left: 147px;
-    margin-left: 240px;
-    margin-top: 50px;
-    height: 1200px;
-    position:sticky
-}
-
-row-1{
-    height: 300px;
-    width: max-content;
-    margin-left: -136px;
-    display: flex;
-    flex-direction: row;
-}
-
-/* .video{
-    height: 260px;
-    width: 150px;
-} */
-
 .thumbnail{
     height: 166px;
     width: 295px;
@@ -406,7 +377,7 @@ row-1{
   border-radius: 20px;
 }
 .title-info{
-  overflow-x: hidden;
+
   padding-right: 24px;
   /* padding-bottom: -40px; */
   margin-bottom: -20px;
@@ -422,22 +393,19 @@ row-1{
 
 .video-body {
   width: 80%;
-  position: relative;
-  overflow-y: scroll;
   margin-top: -50px;
 }
 
 .videos {
-  /* position: absolute; */
-  padding-left: 75px;
+  padding-left: 160px;
   display: grid;
   grid-template-columns: repeat(4, minmax(100px, 1fr));
   margin-top: 50px;
   width: 90%;
-  /* grid-gap: 10px; */
   grid-column-gap: -50px;
   grid-row-gap: 30px;
-  margin-top: 10px;
+  margin-top: 50px;
+  
 }
 
 .video {
