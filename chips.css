@@ -1,0 +1,60 @@
+.left_btn {
+    display: none;
+}
+
+.chips {
+    list-style-type: none;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    white-space: nowrap;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    position: relative;
+    top: 55px;
+    left: 177px;
+    position: fixed;
+    z-index: 1;
+    background-color: #0f0f0f;
+}
+
+.chips::-webkit-scrollbar {
+    display: none;
+}
+
+.fade_container {
+    position: relative;
+}
+
+.fade1 {
+    position: absolute;
+    left: 0;
+    z-index: 2;
+    height: 100%;
+    width: 40px;
+    background-image: linear-gradient(to left,  rgba(255,255,255, 0), 
+    rgb(0, 0, 0) 90%);
+}
+
+.fade2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    height: 100%;
+    width: 40px;
+    background-image: linear-gradient(to right,  rgba(0, 0, 0, 0), 
+    rgb(0, 0, 0) 90%);
+}
+
+.chips > li {
+    display: inline;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 9px;
+    border: none;
+    color: white;
+    background-color: rgb(255 255 255 / 10%);
+}
