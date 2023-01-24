@@ -392,6 +392,7 @@ a{
     width: 781.33px;
     height: 24.8px;
     color: white;
+    outline: none;
 }
 .actions{
     height: 40px;
@@ -458,7 +459,46 @@ a{
 }
 .inner-actions-1{
     display: flex;
+    align-items: center;
 }
 .inner-actions-1 button h6{
     padding-left: 4px;
+}
+.like-btn{
+    height: 36px;
+    width: 80.75px;
+    background-color:#272727;
+    border: none;
+    border-top-left-radius:25px  ;
+    border-bottom-left-radius: 25px ;
+    cursor: pointer;
+}
+.dislike-btn{
+    height: 36px;
+    width: 56px;
+    padding-left: 16px;
+    padding-right: 16px ;
+    background-color: #272727;
+    border: none;
+    border-top-right-radius:25px  ;
+    border-bottom-right-radius: 25px ;
+    cursor: pointer;
+    
+}
+.like-btnn{
+    height: 24px;
+    width: 24px;
+    fill: white;
+    cursor: pointer;
+}
+.line{
+    width: 2px;
+    height: 30px;
+    background-color:darkgray;
+}
+.in{
+    display: flex;
+    background-color: #272727;
+    border-radius: 25px;
+    align-items: center;
 }
