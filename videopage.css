@@ -34,7 +34,7 @@ body{
     width: 884.61px;
     display: flex;
     position: relative;
-    bottom: 414px;
+    bottom: 300px;
 }
 
 
@@ -273,4 +273,192 @@ a{
 }
 .views{
     margin-right: 4px
+}
+.bottom-row{
+    height: 116px;
+    width: 896.61px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.description{
+    cursor: pointer;
+    height:104px ;
+    width: 872.61px;
+    background-color: #272727;
+    border-radius: 14px;
+    margin-top: 12px;
+    margin-right: 12px;
+
+}
+.description-inner{
+    margin: 12px;
+}
+.d-info{
+    font-size: 24px;
+    font-weight: bold;
+    color: #F1F1F1;
+}
+
+.d-main{
+    display: flex;
+    flex-direction: row;
+}
+.show-more{
+    align-self: end;
+    margin-left: 200px;
+}
+.show-more-main{
+    background-color: transparent;
+    border: transparent;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+.comment-section{
+    background-color: #0F0F0F;
+    display: block;
+    width:884.61px;
+    height: fit-content;
+}
+
+.comment-section-header{
+    height: 87.4px;
+    background-color: #0F0F0F;
+}
+.comment-section-inner-header{
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+    margin-bottom: 32px;
+    height: 87.4px;
+}
+.inner-header-title{
+    display: flex;
+    flex: row;
+    margin-bottom: 24px;
+    align-items: center;
+}
+.comment-count{
+    margin: 0 32px 0 0;
+    display: inline-block;
+}
+.sort-by-svg{
+    fill: white;
+    height: 24px;
+    width: 24px;
+}
+.comment-sort-by{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+.sort-by{
+    font-size: 15px;
+    font-weight:200;
+}
+.count{
+    font-size: 15px;
+    font-weight: 400;
+}
+.inner-header-comment-box{
+    height: 40px;
+}
+.inner-comment-box{
+    display: flex;
+    flex-direction: row;
+    margin-right: 16px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.avatar-main{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.avatar{
+    margin-right: 16px;
+}
+.comment-box{
+    padding-bottom: 4px;
+    border-bottom: 1px solid rgba(255,255, 255,0.2);
+}
+
+.comment{
+    background-color: transparent;
+    border: none;
+    width: 781.33px;
+    height: 24.8px;
+    color: white;
+}
+.actions{
+    height: 40px;
+    width: 420.66px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top:16px ;
+}
+
+.inner-actions{
+    width: 420.66px;
+    height: 36px;
+    display: flex;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    width: 420.66px;
+}
+.actions-dot{
+    fill: white;
+    height: 24px;
+    width: 24px;
+}
+.last-btn{
+    height: 36px;
+    width: 36px;
+    background-color:#272727;
+    border: none;
+    border-radius: 50%;
+    margin-left: 8px;
+    cursor: pointer;
+}
+.download-btn{
+    height: 36px;
+    width: 118.34px;
+    border-radius:25px;
+    background-color: #272727;
+    border: none;
+    color: white;
+    display: flex;
+    font-size: 22px;
+    align-items:center;
+    padding-left: 8px;
+    margin-left: 8px;
+    cursor: pointer;
+    font-weight: lighter;
+}
+.share{
+    width: 92.11px;
+    height: 36px;
+    background-color: #272727;
+    border: none;
+    color: white;
+    display: flex;
+    font-size: 22px;
+    align-items:center;
+    padding-left: 8px;
+    margin-left: 8px;
+    cursor: pointer;
+    font-weight: lighter;
+    border-radius: 25px;
+}
+.inner-actions-1{
+    display: flex;
+}
+.inner-actions-1 button h6{
+    padding-left: 4px;
 }
