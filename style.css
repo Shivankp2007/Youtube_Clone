@@ -99,6 +99,7 @@ nav.topnav{
     position: fixed;
     z-index:1;
     background-color: #0F0F0F;
+    width: 100%;
 }
 .ççy{
   margin-top: 150px;
@@ -294,6 +295,9 @@ yt-logo-icon{
   left: -15rem;
   transition: all 0.2s ease-in-out;
   overflow: hidden;
+  display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .nav-menu:hover{

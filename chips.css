@@ -58,3 +58,8 @@
     color: white;
     background-color: rgb(255 255 255 / 10%);
 }
+.chips li:hover{
+    background-color: rgb(91, 91, 91);
+    cursor: pointer;
+    transition: .3s;
+}
